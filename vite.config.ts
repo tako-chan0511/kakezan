@@ -1,7 +1,7 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { VitePWA } from 'vite-plugin-pwa'　 
+import { VitePWA } from 'vite-plugin-pwa' 
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -14,10 +14,11 @@ export default defineConfig({
         enabled: true // 開発モードでもPWAの動作確認を可能にする
       },
       manifest: {
+        id: '/kakezan/',
         name: '２桁掛算', // アプリのフルネーム
         short_name: '２桁掛算', // ホーム画面に表示される短い名前
         description: '２桁の掛け算練習ゲームです。', // アプリの説明
-        start_url: '.', // アプリ起動時のURL
+        start_url:  '/kakezan/', // アプリ起動時のURL
         display: 'standalone', // アドレスバーなどを表示しないネイティブアプリのような表示
         background_color: '#ffffff', // スプラッシュ画面の背景色
         theme_color: '#007acc',      // ツールバーの色
