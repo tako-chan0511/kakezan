@@ -13,7 +13,7 @@
   <!-- 二乗数ゲーム -->
   <template v-if="gameMode === 'square'">
     <section>
-      <h2>二桁の二乗数ゲーム</h2>
+      <h2>二桁の二乗数ゲーム（vue3）</h2>
       <div class="inputs">
         <label>下限: <input type="number" v-model.number="low" /></label>
         <label>上限: <input type="number" v-model.number="high" /></label>
